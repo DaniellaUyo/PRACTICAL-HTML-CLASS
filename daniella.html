@@ -5,34 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniella World</title>
     <style>
-        /* Global Styles */
         body {
-            background-color: #ffccdc; /* Light Pink */
+            background-color: #ffccdc;
             font-family: Arial, sans-serif;
             color: black;
             text-align: center;
             margin: 20px;
         }
-
-        /* Heading Styles */
         h1, h2 {
-            color: #d63384; /* Deep Pink */
+            color: #d63384;
         }
-
-        /* List Styles */
         ul, ol {
-            background-color: rgba(255, 255, 255, 0.8); /* Light transparent white */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 15px;
             border-radius: 10px;
             display: inline-block;
             text-align: left;
         }
         li {
-            color: #c71585; /* Medium Violet Red */
+            color: #c71585;
             margin: 5px 0;
         }
-
-        /* Form Styling */
         form {
             background-color: white;
             color: black;
@@ -43,13 +36,11 @@
             margin: auto;
             text-align: left;
         }
-
         label {
             font-weight: bold;
             display: block;
             margin-top: 10px;
         }
-
         input, select {
             width: 100%;
             padding: 8px;
@@ -57,10 +48,8 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
-        /* Button Styling */
         button {
-            background-color: #d63384; /* Deep Pink */
+            background-color: #d63384;
             color: white;
             padding: 10px;
             border: none;
@@ -70,10 +59,8 @@
             margin-top: 10px;
         }
         button:hover {
-            background-color: #ff69b4; /* Hot Pink */
+            background-color: #ff69b4;
         }
-
-        /* Footer */
         footer {
             margin-top: 20px;
             padding: 10px;
@@ -95,36 +82,23 @@
         <li>Access to exclusive learning materials</li>
     </ul>
 
-    <h2>Steps to Complete Registration:</h2>
-    <ol>
-        <li>Fill out the registration form with accurate details.</li>
-        <li>Choose your preferred course from the dropdown list.</li>
-        <li>Submit the registration form by clicking the "Register" button.</li>
-        <li>Check your email for confirmation and further instructions.</li>
-        <li>Complete any necessary payments (if applicable).</li>
-        <li>Start attending your selected course.</li>
-    </ol>
-
     <h2>Registration Form</h2>
-    <form action="send_email.php" method="post">
+    <form action="https://formspree.io/f/xovengnv" method="POST">
         <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+        <input type="text" id="first-name" name="first-name" required>
 
         <label for="middle-name">Middle Name:</label>
-        <input type="text" id="middle-name" name="middle-name" placeholder="Enter your middle name" required>
+        <input type="text" id="middle-name" name="middle-name" required>
 
         <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+        <input type="text" id="last-name" name="last-name" required>
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="email" id="email" name="email" required>
 
         <label>Gender:</label>
         <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
-
-        <label for="registration-date">Date of Registration:</label>
-        <input type="date" id="registration-date" name="registration-date" required>
 
         <label for="course">Select Course:</label>
         <select id="course" name="course">
@@ -136,21 +110,10 @@
             <option value="computer engineering">Computer Engineering</option>
         </select>
 
-        <label for="registration-number">Enter Your Registration Number:</label>
-        <select id="registration-number" name="registration-number">
-            <option value="001">001</option>
-            <option value="002">002</option>
-            <option value="003">003</option>
-            <option value="004">004</option>
-            <option value="005">005</option>
-            <option value="006">006</option>
-        </select>
-
         <button type="submit">Register</button>
         <button type="reset">Reset</button>
     </form>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; All rights reserved. Daniella, 2025.</p>
         <p>Email: <a href="mailto:uyo@technicheict.com" style="color: white;">uyo@technicheict.com</a></p>
